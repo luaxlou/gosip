@@ -45,7 +45,7 @@ const (
 type MessageID string
 
 func NextMessageID() MessageID {
-	return MessageID(uuid.Must(uuid.NewV4()).String())
+	return MessageID(uuid.NewV4().String())
 }
 
 // Message introduces common SIP message RFC 3261 - 7.
